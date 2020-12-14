@@ -1,12 +1,13 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "user";
 
-$conn = mysqli_connect($server, $username, $password, $database);
-if(!$conn){
-    die("Error" . mysqli_connect_error());
+try{
+	$connection = new PDO("mysql:host=localhost;dbname=hr", 'root', '');
+	$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
+	$dbStatus = "Connection successfully established";
+
+}catch(PDOException $ex_msg){
+	$dbStatus = "Error: ". $ex_msg->getMessage();
 }
 
 ?>
