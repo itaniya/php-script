@@ -1,7 +1,7 @@
 <?php
 
 try{
-	$connection = new PDO("mysql:host=localhost;dbname=hr", 'root', '');
+	$connection = new PDO("mysql:host=localhost;dbname=hr", 'admin', 'admin');
 	$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	$dbStatus = "Connection successfully established";
