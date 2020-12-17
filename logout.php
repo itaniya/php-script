@@ -1,5 +1,4 @@
 <?php
-// include_once('util/global.php'); 
 
 //remove PHPSESSID from browser
 if (isset($_COOKIE[session_name()]))

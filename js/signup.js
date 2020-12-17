@@ -13,7 +13,7 @@ $(document).ready(function () {
     };
 
     $.ajax({
-      url: "submit.php",
+      url: "ajax/ajax-signup.php",
       type: "POST",
       data: JSON.stringify(arr),
       contentType: "application/json; charset=utf-8",
