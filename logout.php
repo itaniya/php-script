@@ -8,7 +8,7 @@ if (isset($_COOKIE[session_name()]))
     $_SESSION = array();
     
     //clear session from disk
-    session_destroy();
+    // session_destroy();
 
     header('location: login.php');
 ?>
