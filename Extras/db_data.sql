@@ -32,7 +32,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`sno`, `username`, `password`, `timestamp`) VALUES
-(21, 'admin', 'admin', '2020-12-17 17:25:56');
+(1, 'admin', 'admin', '2020-12-17 17:25:56');
 
 --
 -- Indexes for dumped tables
@@ -53,4 +53,4 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
